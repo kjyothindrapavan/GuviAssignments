@@ -5,8 +5,8 @@ const students = [
     {name:"Priyadarsini", gender:"female"}
 ];
 
-console.log(students.filter(record=>record["gender"]=="female"))
-console.log(students.filter(record=>record["name"].charAt(0)=='a' || record["name"].charAt(0)=='A'));
+console.log(students.filter(record=>record["gender"]=="female").map(record=>record.name));
+console.log(students.filter(record=>record["name"].charAt(0)=='a' || record["name"].charAt(0)=='A').map(record=>record.name));
 function countMales(Students){
     let count =0;
     for(let i=0;i<Students.length;i++){
